@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Odin Recipes</title>
 </head>
 
 <body>
-    <h1>Odin Recipes</h1>
-    <ul>
-        <li><a href="./recipes/lasagna.html" target="_blank" rel="noopener noreferrer">Lasagna Recipe</a></li>
-        <li><a href="./recipes/magic_cookie_bar.html" target="_blank" rel="noopener noreferrer">Magic Cookie Bar Recipe</a></li>
-        <li><a href="./recipes/pancake.html" target="_blank" rel="noopener noreferrer">Whole Wheat Pancake Recipe</a></li>
-    </ul>
+    <div class="top">
+        Odin Recipes
+    </div>
+
+    <div class="foods">
+        <button id="lasagna" class="foodbutton">Lasagna</button>
+        <button id="mcb" class="foodbutton">Magic Cookie Bar</button>
+        <button id="wwpr" class="foodbutton">Whole Wheat Pancake Recipe</button>
+    </div>
+
+    <div class="bottom">
+        Thanks for browsing our food selection!
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("lasagna").onclick = function () {
+            location.href = "./recipes/lasagna.html";
+        };
+        document.getElementById("mcb").onclick = function () {
+            location.href = "./recipes/magic_cookie_bar.html";
+        };
+        document.getElementById("wwpr").onclick = function () {
+            location.href = "./recipes/pancake.html";
+        };
+    </script>
+
 
 </body>
 
